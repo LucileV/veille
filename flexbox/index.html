@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mise en page avec Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h4>Pour vous aider :</h4>
+<a href="http://flexboxfroggy.com/">S'entrainer avec une grenouille</a><br/>
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Guide Flexbox</a><br/>
+<a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/la-mise-en-page-avec-flexbox">Cours de openclassrooms</a><br/>
+
+<section id="intro">
+  <h3>Element sans flex</h3>
+  <div>
+    <div class="element rouge">Elément 1</div>
+    <div class="element vert">Element 2</div>
+    <div class="element bleu">Element 3</div>
+  </div>
+
+  <h3>Element avec flex</h3>
+  <div id="container">
+    <div class="element rouge">Elément 1</div>
+    <div class="element vert">Element 2</div>
+    <div class="element bleu">Element 3</div>
+  </div>
+</section>
+<br/>
+
+  <!-- ------------------------------------------------- -->
+  <section class="section">
+    <h2>Aligner horizontalement : justify-content</h2>
+
+    <h3>justify-content:flex-start (à gauche)</h3>
+    <div id="justifyContentflexStart">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>justify-content:flex-end (à droite)</h3>
+    <div id="justifyContentFlexEnd">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>justify-content:center (au centre)</h3>
+    <div id="justifyContentflexCenter">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+
+    <h3>justify-content:space-between (espace entre)</h3>
+    <div id="justifyContentSpaceBetween">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>justify-content:center (espace entre + autour)</h3>
+    <div id="justifyContentSpaceAround">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+  </section>
+
+
+
+  <!-- Align items------------------------------------------------------------>
+  <section class="section">
+    <h2>Aligner Verticalement : align-items</h2>
+
+    <h3>align-items:flex-start (en haut)</h3>
+    <div id="alignItemsflexStart">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>align-items:flex-end (en bas)</h3>
+    <div id="alignItemsFlexEnd">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>align-items:center (centre)</h3>
+    <div id="alignItemsflexCenter">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+
+    <h3>align-items:baseline (à la base)</h3>
+    <div id="alignItemsBaseline">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>align-items:strech (éléments sont étirés)</h3>
+    <div id="alignItemsStretch">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+  </section>
+
+<!-- Flex-direction ..................................................-->
+
+  <section class="section">
+    <h2>flex-direction : la direction</h2>
+
+    <h3>flex-direction:row (par défaut:sens du texte)</h3>
+    <div id="flexDirectionRow">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>flex-direction:row-reverse (sens opposé au texte)</h3>
+    <div id="flexDirectionRowReverse">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <h3>flex-direction:column (de haut en bas)</h3>
+    <div id="flexDirectionColumn">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+
+    <h3>flex-direction:column-reverse (de bas en haut)</h3>
+    <div id="flexDirectionColumnReverse">
+      <div class="element rouge">Elément 1</div>
+      <div class="element vert">Element 2</div>
+      <div class="element bleu">Element 3</div>
+    </div>
+
+    <p id="rouge">Attention : quand on utilise flex-direction justify-content devient vertical et align-items horizontal</p>
+
+  </section>
+
+<!-- flex-wrap ............................................................-->
+<section class="section">
+  <h2>flex-wrap : gestion du retour à la ligne</h2>
+
+  <h3>nowrap (par défaut: sur une ligne)</h3>
+  <div id="flexWrapNoWrap">
+    <div class="elementWrap rouge">Elément 1</div>
+    <div class="elementWrap vert">Element 2</div>
+    <div class="elementWrap bleu">Element 3</div>
+  </div>
+
+  <h3>wrap (retour à la ligne des éléments en trop)</h3>
+  <div id="flexWrapWrap">
+    <div class="elementWrap rouge">Elément 1</div>
+    <div class="elementWrap vert">Element 2</div>
+    <div class="elementWrap bleu">Element 3</div>
+  </div>
+
+  <h3>wrap-reverse (retour à la ligne + inverse)</h3>
+  <div id="flexWrapWrapReverse">
+    <div class="elementWrap rouge">Elément 1</div>
+    <div class="elementWrap vert">Element 2</div>
+    <div class="elementWrap bleu">Element 3</div>
+  </div>
+
+</section>
+
+
+
+<!-- Order .............................................................-->
+
+<section class="section">
+  <h2>Order : la position d'un élément</h2>
+
+  <h3>par défaut:0</h3>
+  <div class="order">
+    <div class="element rouge">Elément 1</div>
+    <div class="element vert">Element 2</div>
+    <div class="element bleu">Element 3</div>
+  </div>
+
+  <h3>Nombre négatif (part à gauche)</h3>
+  <div class="order">
+    <div class="element rouge">Elément 1</div>
+    <div class="element vert">Element 2</div>
+    <div class="element bleu" id="orderNegatif">Element 3</div>
+  </div>
+
+  <h3>Nombre positif (part à droite)</h3>
+  <div class="order">
+    <div class="element rouge" id="orderPositif">Elément 1</div>
+    <div class="element vert">Element 2</div>
+    <div class="element bleu">Element 3</div>
+  </div>
+
+</section>
+
+
+
+</body>
+</html>

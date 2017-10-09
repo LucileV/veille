@@ -1,0 +1,142 @@
+
+.section{
+  width:700px;
+  height:auto;
+  border: 1px solid red;
+  display:inline-block;
+  vertical-align: top;
+}
+.element{
+  width:100px;
+  height:100px;
+}
+.elementWrap{
+  width:250px;
+  height:250px;
+}
+.rouge{
+  background-color:red;
+}
+.vert{
+  background-color: green;
+}
+.bleu{
+  background-color: blue;
+}
+#rouge{
+  color:red;
+}
+
+#container{
+  display:flex;
+}
+/* Justify-content (horizontal).......................................*/
+.section2{
+  .section{
+    width:auto;
+    height:auto;
+    border: 1px solid red;
+    margin:0 auto;
+  }
+}
+
+#justifyContentflexStart{
+  display:flex;
+  justify-content:flex-start;
+}
+#justifyContentFlexEnd{
+  display:flex;
+  justify-content:flex-end;
+}
+#justifyContentflexCenter{
+  display:flex;
+  justify-content:center;
+}
+#justifyContentSpaceBetween{
+  display:flex;
+  justify-content:space-between;
+}
+#justifyContentSpaceAround{
+  display:flex;
+  justify-content:space-around;
+}
+
+/* Align-items (vertical)................................................. */
+#alignItemsflexStart{
+  display:flex;
+  align-items: flex-start;
+  width:300px;
+  height:200px;
+  border: 1px solid red;
+}
+#alignItemsFlexEnd{
+  display:flex;
+  align-items:flex-end;
+  width:300px;
+  height:200px;
+  border: 1px solid red;
+}
+#alignItemsflexCenter{
+  display:flex;
+  align-items:center;
+  width:300px;
+  height:200px;
+  border: 1px solid red;
+}
+#alignItemsBaseline{
+  display:flex;
+  align-items:baseline;
+  width:300px;
+  height:200px;
+  border: 1px solid red;
+}
+#alignItemsStretch{
+  display:flex;
+  align-items:stretch;
+  width:300px;
+  height:200px;
+  border: 1px solid red;
+}
+
+
+/* Flex-direction---------------------------------------------------- */
+#flexDirectionRow{
+  display:flex;
+  flex-direction:row;
+}
+#flexDirectionRowReverse{
+  display:flex;
+  flex-direction:row-reverse;
+}
+#flexDirectionColumn{
+  display:flex;
+  flex-direction:column;
+}
+#flexDirectionColumnReverse{
+  display:flex;
+  flex-direction:column-reverse;
+}
+
+/* flex-wrap (Retour à la ligne)*/
+#flexWrapNoWrap{
+  display:flex;
+  flex-wrap: nowrap;
+}
+#flexWrapWrap{
+  display:flex;
+  flex-wrap: wrap;
+}
+#flexWrapWrapReverse{
+  display:flex;
+  flex-wrap: wrap-reverse;
+}
+/*  Order.........................................................*/
+.order{
+  display:flex;
+}
+#orderNegatif{
+  order:-1;
+}
+#orderPositif{
+  order:+1;
+}
